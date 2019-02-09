@@ -11,11 +11,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class LoginTests {
 
     WebDriver driver;
+    Map<String,String> mayMap = new HashMap<String,String >();
 
     @BeforeMethod
     public void setUp() {
